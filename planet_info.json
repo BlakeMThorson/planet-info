@@ -1,26 +1,50 @@
-// name
-// mass in KG
-// distance from sun in KM
-// list of moons
-
-//, venus, earth, mars,
-//saturn, uranus, neptune
-
 [
   {
     "name": "Jupiter",
-    "mass": 1898200000000000000000000000,
-    "distance" : 777908928,
+    "mass_kg": 1898200000000000000000000000,
+    "distance_km" : 777908928,
     "moons" : ["Io", "Europa", "Ganymede", "Callisto"]
   },
   {
     "name": "Mercury",
-    "mass": 330110000000000000000000,
-    "distance": 70000000,
+    "mass_kg": 330110000000000000000000,
+    "distance_km": 70000000,
     "moons": []
   },
   {
     "name": "Venus",
-    "mass": 
+    "mass_kg": 4867500000000000000000000,
+    "distance_km": 108940000,
+    "moons": []
+  },
+  {
+    "name": "Earth",
+    "mass_kg": 5972168000000000000000000,
+    "distance_km": 152097597,
+    "moons": ["The Moon"]
+  },
+  {
+    "name": "Mars",
+    "mass_kg": 641710000000000000000000,
+    "distance_km": 249261000,
+    "moons": ["Phobos,"]
+  },
+  {
+    "name": "Saturn",
+    "mass_kg": 568340000000000000000000000,
+    "distance_km": 1514498923,
+    "moons": ["Titan", "Rhea", "Lapetus", "Dione", "Tethys"]
+  },
+  {
+    "name": "Uranus",
+    "mass_kg": 86810000000000000000000000,
+    "distance_km": 3006393609,
+    "moons": ["Titania", "Oberon", "Umbriel", "Ariel", "Miranda"]
+  },
+  {
+    "name": "Neptune",
+    "mass_kg": 102409000000000000000000000,
+    "distance_km": 4537303418,
+    "moons": ["Triton", "Proteus", "Nereid", "Larissa", "Galatea"]
   }
 ]
