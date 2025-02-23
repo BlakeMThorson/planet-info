@@ -1,0 +1,26 @@
+// name
+// mass in KG
+// distance from sun in KM
+// list of moons
+
+//, venus, earth, mars,
+//saturn, uranus, neptune
+
+[
+  {
+    "name": "Jupiter",
+    "mass": 1898200000000000000000000000,
+    "distance" : 777908928,
+    "moons" : ["Io", "Europa", "Ganymede", "Callisto"]
+  },
+  {
+    "name": "Mercury",
+    "mass": 330110000000000000000000,
+    "distance": 70000000,
+    "moons": []
+  },
+  {
+    "name": "Venus",
+    "mass": 
+  }
+]
