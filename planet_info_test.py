@@ -10,6 +10,7 @@ class SimpleTestCase(unittest.TestCase):
     def test_distance_from_another_planet(self):
         assert self.first_planet.distance_from_another_planet(self.second_planet) == 90
         assert self.second_planet.distance_from_another_planet(self.first_planet) == 90
+        assert self.second_planet.distance_from_another_planet(self.second_planet) == 0
 
     def test_compare_mass_to_another_planet(self):
         assert self.first_planet.compare_mass_to_another_planet(self.second_planet) == "first is 90kg lighter than second"
