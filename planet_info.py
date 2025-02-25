@@ -221,8 +221,7 @@ if __name__ == "__main__":
     command = input("> ").lower().replace("?","").replace(".","")
     try:
       handle_command(command)
-    except Exception as e:
-      print(e)
+    except:
       print("There was an issue handling your input, ensure it is formatted as follows")
       print("'How massive is Saturn?'")
       print("You can also type 'See options' to see all available options.")
