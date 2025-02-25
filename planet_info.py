@@ -1,6 +1,9 @@
-# List of stack overflow sources used:
+# List of stack overflow sources used w/ apa citations:
   # https://stackoverflow.com/questions/62656633/lambda-function-for-sortkey-in-python
+  #rodny9. (2020, June 30). Lambda function for sort(key=...) in Python. Stack Overflow. https://stackoverflow.com/questions/62656633/lambda-function-for-sortkey-in-python
+‌
   # https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
+  # Zamaria, E. (2009, November 30). How to print a number using commas as thousands separators. Stack Overflow. https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
 planet_info = [
   {
     "name": "Jupiter",
