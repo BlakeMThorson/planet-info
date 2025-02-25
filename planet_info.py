@@ -1,5 +1,6 @@
-# https://stackoverflow.com/questions/62656633/lambda-function-for-sortkey-in-python
-# https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
+# List of stack overflow sources used:
+  # https://stackoverflow.com/questions/62656633/lambda-function-for-sortkey-in-python
+  # https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
 planet_info = [
   {
     "name": "Jupiter",
@@ -78,6 +79,7 @@ class Planet:
 
   def compare_mass_to_another_planet(self, other_planet):
     if type(other_planet) == Planet:
+      # https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
       return f"{self.name} is {abs(self.mass - other_planet.mass):,}kg {'lighter' if self.mass < other_planet.mass else 'heavier'} than {other_planet.name}"
     else:
       raise TypeError("What was provided wasn't an instance of a planet.")
@@ -91,6 +93,7 @@ class Planet:
       return f"{self.name} has no moons."
 
   def print(self):
+    # https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
     print(f"""
 {self.name}:
   - Mass : {self.mass:,} kg
@@ -156,6 +159,7 @@ def handle_command(command):
     print(", ".join(names) + ".")
   # - List all planets by distance.
   elif command == "list all planets by distance":
+    # https://stackoverflow.com/questions/62656633/lambda-function-for-sortkey-in-python
     distance_sort = sorted(all_planets, key = lambda planet: planet.distance_from_sun )
     print(", ".join([planet.name for planet in distance_sort]) + ".")
   # - Tell me about ___.
@@ -167,6 +171,7 @@ def handle_command(command):
   elif command.startswith("how massive is "):
     planet = get_planet_object_from_name(command, 15)
     if planet:
+      # https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
       print(f"{planet.name} weighs {planet.mass:,} kg.")
   # - Is ___ in the list of planets?
   elif command.endswith(" in the list of planets") and command.startswith("is "):
@@ -189,12 +194,14 @@ def handle_command(command):
   elif command.startswith("how far is ") and command.endswith(" from the sun"):
     planet = get_planet_object_from_name(command, 11, command.index(" from the sun"))
     if planet:
+      # https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
       print(f"{planet.name} is {planet.distance_from_sun:,}km from the sun at its aphelion.")
   # - How far is ___ from ___?
   elif command.startswith("how far is ") and " from " in command:
     first_planet = get_planet_object_from_name(command, 11, command.index(" from "))
     second_planet = get_planet_object_from_name(command, command.index(" from") + 6)
     if first_planet and second_planet:
+      # https://stackoverflow.com/questions/1823058/how-to-print-a-number-using-commas-as-thousands-separators
       print(f"{first_planet.name} is {first_planet.distance_from_another_planet(second_planet):,}km away from {second_planet.name}")
   # - Compare mass for ___ and ___
   elif command.startswith("compare mass for ") and " and " in command:
