@@ -1,5 +1,6 @@
 ________________________________________________
 **************** PLANET INFO *******************
+
 ************** BY BLAKE THORSON ****************
 ________________________________________________
 Available Options :
@@ -18,9 +19,13 @@ Available Options :
 Example : "How far is Earth from the sun?"
 
 > list all planets alphabetically
+
 Earth, Jupiter, Mars, Mercury, Neptune, Saturn, Uranus, Venus.
+
 > list all planets by distance
+
 Mercury, Venus, Earth, Mars, Jupiter, Saturn, Uranus, Neptune.
+
 > tell me about jupiter.
 
 Jupiter:
@@ -30,22 +35,41 @@ Jupiter:
   - Jupiter has the following moons: Io, Europa, Ganymede, Callisto.
 
 > how massive is earth?
+
 Earth weighs 5,972,168,000,000,000,000,000,000 kg.
+
 > is pluto in the list of planets?
+
 No, 'pluto' is not in the list of planets.
+
 > how many moons does mercury have?
+
 Mercury has 0 moons.
+
 > name the moons of mars.
+
 Mars has the following moons: Phobos, Deimos.
+
 > how far is neptune from the sun?
+
 Neptune is 4,537,303,418km from the sun at its aphelion.
+
 > how far is earth from mars?
+
 Earth is 97,163,403km away from Mars
+
 > compare mass for earth and mars.
+
 Earth is 5,330,458,000,000,000,000,000,000kg heavier than Mars
+
 > compare mass for mars and earth
+
 Mars is 5,330,458,000,000,000,000,000,000kg lighter than Earth
+
 > compare mass for earth and earth
+
 Earth is 0kg heavier than Earth
+
 > quit
+
 Goodbye!
