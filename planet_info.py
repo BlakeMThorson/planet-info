@@ -78,13 +78,13 @@ class Planet:
 
   def compare_mass_to_another_planet(self, other_planet):
     if type(other_planet) == Planet:
-      return f"{self.name} is {abs(self.mass - other_planet.mass):,}kg {"lighter" if self.mass < other_planet.mass else "heavier"} than {other_planet.name}"
+      return f"{self.name} is {abs(self.mass - other_planet.mass):,}kg {'lighter' if self.mass < other_planet.mass else 'heavier'} than {other_planet.name}"
     else:
       raise TypeError("What was provided wasn't an instance of a planet.")
 
   def format_moons(self):
     if len(self.moons) > 1:
-      return f"{self.name} has the following moons: {", ".join(self.moons)}."
+      return f"{self.name} has the following moons: {', '.join(self.moons)}."
     elif len(self.moons) == 1:
       return f"{self.name} has the following moon: {self.moons[0]}."
     else:
@@ -179,7 +179,7 @@ def handle_command(command):
   elif command.startswith("how many moons does ") and command.endswith(" have"):
     planet = get_planet_object_from_name(command, 20, command.index(" have"))
     if planet:
-      print(f"{planet.name} has {planet.moon_count} moon{"s" if planet.moon_count != 1 else ""}.")
+      print(f"{planet.name} has {planet.moon_count} moon{'s' if planet.moon_count != 1 else ''}.")
   # - Name the moons of ___.
   elif command.startswith("name the moons of "):
     planet = get_planet_object_from_name(command, 18)
